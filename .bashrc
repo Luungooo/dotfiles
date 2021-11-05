@@ -1,4 +1,4 @@
-source /etc/bashrc
+#source /etc/bashrc
 
 RESET="\[\033[01;00m\]"
 FG_MAGNETA="\[\033[01;35m\]"
@@ -42,7 +42,8 @@ alias ytv='yt -f bestvideo'
 alias yta='yt -f bestaudio'
 alias mkdir='mkdir -p'
 alias alacrittyconf='$EDITOR ~/.config/alacritty/alacritty.yml'
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias pacman='sudo pacman'
+crbu() { dd bs=4M if="$1" of="$2" status=progress oflag=sync; }
 
 
 #environment variable
